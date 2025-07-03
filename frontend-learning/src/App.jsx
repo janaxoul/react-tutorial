@@ -18,7 +18,7 @@ function App() {
         click
       </button>
     </div>
-  ) 
+  )
 }
 
 export default App;
