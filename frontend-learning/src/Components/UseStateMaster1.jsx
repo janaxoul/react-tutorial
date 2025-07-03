@@ -11,9 +11,14 @@ const [val, setVal] = useState([{name:"Mark", age:19}, {name:"Messi", age: 38}, 
             <h1>{elem.age}</h1>
             <br />
             </div>
+
         ))}
         <button
-            onClick={()=>{setVal(()=>val.map((item)=>item.name==="Messi"? {name:"Messi", age:37} : item))}}
+            onClick={()=>{setVal(()=>{
+                val.map((item)=>{
+                    item.name==="Messi"? {name:"Messi", age:37} : item
+                }
+            )})}}
             className="px-3 py-1 rounded-full bg-blue-400 text-white"
         >
             click
@@ -23,6 +28,8 @@ const [val, setVal] = useState([{name:"Mark", age:19}, {name:"Messi", age: 38}, 
 }
 
 export default UseStateMaster1
+
+
 
 
 // function UseStateMaster1() {
