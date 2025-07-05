@@ -4,6 +4,7 @@ import Nav from "./Components/MusicComponents/Nav";
 
 function App() {
   const data = [
+    
     {
       image: "https://i.pinimg.com/736x/ab/ff/c9/abffc98267ac0ad384e569c81ea01b12.jpg",
       name: "...Baby One More Time",
