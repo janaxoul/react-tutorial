@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function User() {
   return (
@@ -12,6 +12,8 @@ function User() {
         <Link className='p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300 rounded-md' to='/user/robert'>Robert</Link>
         <Link className='p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300 rounded-md' to='/user/ryan'>Ryan</Link>
       </div>
+      <br />
+      <Outlet/>
     </div>
   )
 }

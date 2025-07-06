@@ -8,8 +8,9 @@ function Routing() {
         <div>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/user' element={<User/>}/>
-                <Route path='/user/:name' element={<UserDetail/>}/>
+                <Route path='/user' element={<User/>} >
+                    <Route path='/user/:name' element={<UserDetail/>}/>
+                </Route>
                 <Route path='/about' element={<About/>}/>
             </Routes>
         </div>
